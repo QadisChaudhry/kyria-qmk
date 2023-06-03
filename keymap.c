@@ -74,6 +74,9 @@ enum keycodes {
 #define BACK G(KC_LBRC)
 #define FORWARD G(KC_RBRC)
 
+#define C_GRV LCTL_T(KC_GRV)
+#define C_DEL LCTL_T(KC_DEL)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /*
@@ -95,21 +98,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_TAB,        KC_Q, KC_W,  KC_E, KC_R, KC_T,                                            KC_Y, KC_U, KC_I,   KC_O,  KC_P,    KC_EQL,
      L3_ESC,        KC_A, KC_S,  KC_D, KC_F, KC_G,                                            KC_H, KC_J, KC_K,   KC_L,  KC_SCLN, KC_QUOT,
      OSM(MOD_LSFT), C_Z,  A_X,   G_C,  S_V,  KC_B, KC_MRWD, G(KC_V),        KC_UP,   KC_MFFD, KC_N, S_M,  G_COMM, A_DOT, C_SLSH,  OSM(MOD_LSFT),
-                          KC_MPLY, KC_GRV, Layer1, KC_BSPC, G(KC_C),        KC_DOWN, KC_SPC,  L2_ENT, KC_DEL, KC_MUTE
+                           KC_MPLY, C_GRV, Layer1, KC_BSPC, G(KC_C),        KC_DOWN, KC_SPC,  L2_ENT, C_DEL, KC_MUTE
     ),
 
     [_COLEMAK] = LAYOUT(
      KC_TAB,        KC_Q, KC_W,  KC_F, KC_P, KC_B,                                            KC_J, KC_L, KC_U,   KC_Y,  KC_SCLN, KC_EQL,
      L3_ESC,        KC_A, KC_R,  KC_S, KC_T, KC_G,                                            KC_M, KC_N, KC_E,   KC_I,  KC_O,    KC_QUOT,
      OSM(MOD_LSFT), C_Z,  A_X,   G_C,  S_D,  KC_V, KC_MRWD, G(KC_V),        KC_UP,   KC_MFFD, KC_K, S_H,  G_COMM, A_DOT, C_SLSH,  OSM(MOD_LSFT),
-                          KC_MPLY, KC_GRV, Layer1, KC_BSPC, G(KC_C),        KC_DOWN, KC_SPC,  L2_ENT, KC_DEL, KC_MUTE
+                           KC_MPLY, C_GRV, Layer1, KC_BSPC, G(KC_C),        KC_DOWN, KC_SPC,  L2_ENT, C_DEL, KC_MUTE
     ),
 
     [_DVORAK] = LAYOUT(
      KC_TAB,        KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y,                                            KC_F, KC_G, KC_C, KC_R, KC_L, KC_SLSH,
      L3_ESC,        KC_A,    KC_O,    KC_E,   KC_U, KC_I,                                            KC_D, KC_H, KC_T, KC_N, KC_S, KC_MINS,
      OSM(MOD_LSFT), C_SCLN,  A_Q,     G_J,    S_K,  KC_X, KC_MRWD, G(KC_V),        KC_UP,   KC_MFFD, KC_B, S_M,  G_W,  A_V,  C_Z,  OSM(MOD_LSFT),
-                                 KC_MPLY, KC_GRV, Layer1, KC_BSPC, G(KC_C),        KC_DOWN, KC_SPC,  L2_ENT, KC_DEL, KC_MUTE
+                                  KC_MPLY, C_GRV, Layer1, KC_BSPC, G(KC_C),        KC_DOWN, KC_SPC,  L2_ENT, C_DEL, KC_MUTE
     ),
 
     [_Layer1] = LAYOUT(
