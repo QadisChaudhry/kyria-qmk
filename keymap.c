@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_Layer1] = LAYOUT(
      PSSWD,   _______, _______, KC_LCBR, KC_RCBR, _______,                                            _______, KC_7, KC_8, KC_9, KC_PAST, KC_PEQL,
-     _______, _______, KC_BSLS, KC_LPRN, KC_RPRN, _______,                                            KC_DOT,  KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
+     KC_CAPS, _______, KC_BSLS, KC_LPRN, KC_RPRN, _______,                                            KC_DOT,  KC_4, KC_5, KC_6, KC_PPLS, KC_MINS,
      _______, KC_LCTL, KC_PIPE, G_LBRC,  S_RBRC,  _______, _______, _______,        _______, _______, KC_COMM, KC_1, KC_2, KC_3, KC_PSLS, _______,
                                 _______, _______, _______, _______, _______,        _______, _______, KC_0,    _______, _______
     ),
@@ -178,7 +178,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case L2_ENT:
+        case L2_ENT || L1_ENT:
             return TAPPING_TERM - 106;
         case L3_ESC:
             return TAPPING_TERM - 100;
