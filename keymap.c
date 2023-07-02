@@ -131,10 +131,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_Layer3] = LAYOUT(
-     _______, _______, KC_MS_D, KC_MS_U, KC_MS_BTN1, _______,                                           _______, KC_AMPR, KC_ASTR, KC_LPRN, _______, _______,
-     _______, _______, SS1,     SS2,     HYPR(KC_F), _______,                                           _______, KC_DLR,  KC_PERC, KC_CIRC, KC_TILD, KC_UNDS,
-     _______, KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT,    _______, _______, _______,       _______, _______, _______, KC_EXLM, KC_AT,   KC_HASH, KC_GRV,  _______,
-                                   _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
+     _______, KC_MS_BTN1, KC_F7, KC_F8, KC_F9, _______,                                           _______, KC_AMPR, KC_ASTR, KC_LPRN, _______, _______,
+     _______, _______,    KC_F4, KC_F5, KC_F6, HYPR(KC_F),                                        _______, KC_DLR,  KC_PERC, KC_CIRC, KC_TILD, KC_UNDS,
+     _______, KC_LCTL,    KC_F1, KC_F2, KC_F3, _______, _______, _______,       _______, _______, _______, KC_EXLM, KC_AT,   KC_HASH, KC_GRV,  _______,
+                             _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
     ),
 
     [_Layer4] = LAYOUT(
